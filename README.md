@@ -8,6 +8,10 @@ Uma aplicação web simples para gerar expressões cron sem precisar memorizar a
 
 O Gerador de Cron é uma ferramenta web que ajuda a criar expressões cron através de uma interface amigável. Expressões cron são utilizadas para agendar tarefas recorrentes em sistemas baseados em Unix e em várias outras plataformas e linguagens de programação.
 
+## 🌐 Demo Online
+
+Acesse a demonstração online em: [https://crongen.bs.dev.br/](https://crongen.bs.dev.br/)
+
 ## 🚀 Tecnologias
 
 - TypeScript

@@ -8,6 +8,10 @@ A simple web application to generate cron expressions without having to memorize
 
 The Cron Generator is a web tool that helps create cron expressions through a friendly interface. Cron expressions are used to schedule recurring tasks in Unix-based systems and in various other platforms and programming languages.
 
+## 🌐 Online Demo
+
+Access the online demo at: [https://crongen.bs.dev.br/](https://crongen.bs.dev.br/)
+
 ## 🚀 Technologies
 
 - TypeScript
