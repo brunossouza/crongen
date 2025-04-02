@@ -68,7 +68,13 @@
 
       <div class="result-container">
         <h2>Expressão Cron:</h2>
-        <div id="cronResult" class="cron-result">* * * * *</div>
+        <div class="cron-result-container">
+          <div id="cronResult" class="cron-result">* * * * *</div>
+          <button id="copyButton" class="copy-button" title="Copiar para área de transferência">
+            <span class="copy-icon">📋</span>
+            <span class="copy-text">Copiar</span>
+          </button>
+        </div>
         <div id="cronExplanation" class="cron-explanation"></div>
       </div>
     </div>

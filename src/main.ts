@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const timeInput = document.getElementById('timeInput') as HTMLInputElement;
   const cronResult = document.getElementById('cronResult') as HTMLDivElement;
   const cronExplanation = document.getElementById('cronExplanation') as HTMLDivElement;
+  const copyButton = document.getElementById('copyButton') as HTMLButtonElement;
 
   // Set default value to current date/time
   const now = new Date();
@@ -53,6 +54,28 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       target.value = formattedValue;
+    }
+  });
+
+  // Handle copy button click
+  copyButton.addEventListener('click', () => {
+    if (cronResult.textContent) {
+      navigator.clipboard.writeText(cronResult.textContent)
+        .then(() => {
+          // Visual feedback that copy was successful
+          const originalText = copyButton.querySelector('.copy-text')?.textContent;
+          const copyText = copyButton.querySelector('.copy-text') as HTMLElement;
+          if (copyText) {
+            copyText.textContent = 'Copiado!';
+            setTimeout(() => {
+              copyText.textContent = originalText;
+            }, 2000);
+          }
+        })
+        .catch(err => {
+          console.error('Erro ao copiar: ', err);
+          alert('Não foi possível copiar a expressão. Por favor, copie manualmente.');
+        });
     }
   });
 
