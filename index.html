@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cron Generator</title>
+</head>
+
+<body>
+  <div id="app">
+    <h1>Cron Generator</h1>
+    <div class="container">
+      <form id="cronForm">
+        <div class="form-group">
+          <label for="frequencySelect">Frequência:</label>
+          <select id="frequencySelect" class="form-control">
+            <option value="once">Uma vez (específico)</option>
+            <option value="daily">Diariamente (todos os dias)</option>
+            <option value="weekly">Semanalmente (dia da semana)</option>
+            <option value="monthly">Mensalmente (dia do mês)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="dateTimeInput">Data e Hora:</label>
+          <input type="datetime-local" id="dateTimeInput" required>
+        </div>
+
+        <button type="submit" id="generateButton">Gerar Expressão Cron</button>
+      </form>
+
+      <div class="result-container">
+        <h2>Expressão Cron:</h2>
+        <div id="cronResult" class="cron-result">* * * * *</div>
+        <div id="cronExplanation" class="cron-explanation"></div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
