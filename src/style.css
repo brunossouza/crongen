@@ -108,6 +108,39 @@ button:hover {
   line-height: 1.5;
 }
 
+.form-text {
+  display: block;
+  color: #666;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.datetime-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.date-input-wrapper {
+  flex: 2;
+}
+
+.time-input-wrapper {
+  flex: 1;
+}
+
+.datetime-inputs input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.datetime-inputs input:focus {
+  border-color: #4285f4;
+  outline: none;
+}
+
 @media (max-width: 600px) {
   .container {
     padding: 15px;

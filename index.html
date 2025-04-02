@@ -1,16 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cron Generator</title>
+  <title>Gerador de Cron</title>
 </head>
 
 <body>
   <div id="app">
-    <h1>Cron Generator</h1>
+    <h1>Gerador de Cron</h1>
     <div class="container">
       <form id="cronForm">
         <div class="form-group">
@@ -24,8 +24,16 @@
         </div>
 
         <div class="form-group">
-          <label for="dateTimeInput">Data e Hora:</label>
-          <input type="datetime-local" id="dateTimeInput" required>
+          <label>Data e Hora:</label>
+          <div class="datetime-inputs">
+            <div class="date-input-wrapper">
+              <input type="text" id="dateInput" placeholder="DD/MM/AAAA" required maxlength="10" />
+            </div>
+            <div class="time-input-wrapper">
+              <input type="text" id="timeInput" placeholder="HH:MM" required maxlength="5" />
+            </div>
+          </div>
+          <small class="form-text">Formato: DD/MM/AAAA HH:MM</small>
         </div>
 
         <button type="submit" id="generateButton">Gerar Expressão Cron</button>
