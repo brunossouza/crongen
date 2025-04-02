@@ -1,4 +1,4 @@
-import { generateCronExpression, generateExplanation, Frequency } from '../cronUtils';
+import { generateCronExpression, generateExplanation } from '../cronUtils';
 
 describe('cronUtils', () => {
     describe('generateCronExpression', () => {
