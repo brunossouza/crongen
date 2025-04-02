@@ -11,6 +11,32 @@
 <body>
   <div id="app">
     <h1>Gerador de Cron</h1>
+
+    <div class="info-section">
+      <h2>O que é uma expressão Cron?</h2>
+      <p>
+        Expressões Cron são padrões de texto utilizados para especificar agendamentos de tarefas recorrentes em sistemas
+        operacionais baseados em Unix, como Linux, e em muitas outras plataformas e linguagens de programação.
+      </p>
+      <p>
+        Uma expressão Cron típica consiste em cinco campos, representando:
+      </p>
+      <ul class="cron-fields">
+        <li><strong>Minutos</strong> (0-59)</li>
+        <li><strong>Horas</strong> (0-23)</li>
+        <li><strong>Dia do mês</strong> (1-31)</li>
+        <li><strong>Mês</strong> (1-12)</li>
+        <li><strong>Dia da semana</strong> (0-6, onde 0=domingo)</li>
+      </ul>
+      <p>
+        Por exemplo, a expressão <code>0 12 * * 1-5</code> significa "executar todos os dias úteis (segunda a sexta) ao
+        meio-dia".
+      </p>
+      <p>
+        Use este gerador para criar expressões Cron de forma fácil, sem precisar memorizar a sintaxe.
+      </p>
+    </div>
+
     <div class="container">
       <form id="cronForm">
         <div class="form-group">
