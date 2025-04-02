@@ -8,9 +8,10 @@ A simple web application to generate cron expressions without having to memorize
 
 The Cron Generator is a web tool that helps create cron expressions through a friendly interface. Cron expressions are used to schedule recurring tasks in Unix-based systems and in various other platforms and programming languages.
 
-## 🌐 Online Demo
+## 🔗 Links
 
-Access the online demo at: [https://crongen.bs.dev.br/](https://crongen.bs.dev.br/)
+- **Repository:** [https://github.com/brunossouza/crongen](https://github.com/brunossouza/crongen)
+- **Online Demo:** [https://crongen.bs.dev.br/](https://crongen.bs.dev.br/)
 
 ## 🚀 Technologies
 
@@ -29,7 +30,7 @@ Access the online demo at: [https://crongen.bs.dev.br/](https://crongen.bs.dev.b
 
 1. Clone the repository:
    ```bash
-   git clone [repository-url]
+   git clone https://github.com/brunossouza/crongen
    cd crongen
    ```
 
@@ -54,7 +55,7 @@ If you prefer, you can run the application using Docker:
 
 1. Clone the repository:
    ```bash
-   git clone [repository-url]
+   git clone https://github.com/brunossouza/crongen
    cd crongen
    ```
 
