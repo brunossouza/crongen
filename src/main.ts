@@ -63,9 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
       navigator.clipboard.writeText(cronResult.textContent)
         .then(() => {
           // Visual feedback that copy was successful
-          const originalText = copyButton.querySelector('.copy-text')?.textContent;
           const copyText = copyButton.querySelector('.copy-text') as HTMLElement;
           if (copyText) {
+            const originalText = copyText.textContent || 'Copiar';
             copyText.textContent = 'Copiado!';
             setTimeout(() => {
               copyText.textContent = originalText;
