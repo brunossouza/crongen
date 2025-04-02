@@ -1,0 +1,45 @@
+# Dependencies
+node_modules
+yarn-error.log
+npm-debug.log
+.pnpm-debug.log
+
+# Build outputs
+dist
+dist-ssr
+*.local
+
+# Docker files
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Git
+.git
+.gitignore
+
+# Editor directories and files
+.vscode
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+
+# Logs
+logs
+*.log
+
+# Testing
+coverage
+.nyc_output
+
+# Environment variables
+.env*
+!.env.example
+
+# Other project files not needed in container
+*.md
+project-structure.txt
