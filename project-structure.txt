@@ -1,0 +1,16 @@
+.
+├── docker-compose.yml
+├── Dockerfile
+├── index.html
+├── package.json
+├── project-structure.txt
+├── public
+│   └── favicon.svg
+├── src
+│   ├── main.ts
+│   ├── style.css
+│   └── vite-env.d.ts
+├── tsconfig.json
+└── yarn.lock
+
+3 directories, 11 files

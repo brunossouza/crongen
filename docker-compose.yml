@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  crongen:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: crongen-app
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    # If you need environment variables, add them here:
+    # environment:
+    #   - NODE_ENV=production
+    # If you need volumes for persistent data:
+    # volumes:
+    #   - ./some-local-path:/path/in/container
