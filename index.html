@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gerador de Cron</title>
 </head>
@@ -28,12 +28,13 @@
           <div class="datetime-inputs">
             <div class="date-input-wrapper">
               <input type="text" id="dateInput" placeholder="DD/MM/AAAA" required maxlength="10" />
+              <small class="form-text">Formato: DD/MM/AAAA</small>
             </div>
             <div class="time-input-wrapper">
               <input type="text" id="timeInput" placeholder="HH:MM" required maxlength="5" />
+              <small class="form-text">Formato: HH:MM (24h)</small>
             </div>
           </div>
-          <small class="form-text">Formato: DD/MM/AAAA HH:MM</small>
         </div>
 
         <button type="submit" id="generateButton">Gerar Expressão Cron</button>

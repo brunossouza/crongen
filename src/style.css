@@ -141,6 +141,12 @@ button:hover {
   outline: none;
 }
 
+.datetime-inputs .form-text {
+  margin-top: 4px;
+  font-size: 11px;
+  color: #666;
+}
+
 @media (max-width: 600px) {
   .container {
     padding: 15px;
