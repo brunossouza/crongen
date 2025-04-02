@@ -5,8 +5,8 @@ services:
       dockerfile: Dockerfile
     container_name: crongen-app
     restart: unless-stopped
-        networks:
-            - backbone
+    networks:
+        - backbone
 
 networks:
     backbone:
